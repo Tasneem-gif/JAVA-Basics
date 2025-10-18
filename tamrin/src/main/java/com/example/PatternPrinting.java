@@ -1,3 +1,4 @@
+package com.example;
 import java.util.Scanner;
 
 public class PatternPrinting {
@@ -20,8 +21,8 @@ public class PatternPrinting {
 
 
         System.out.println("\nHollow Square:");
-        for (int i = 1; i <= n; i++) {       
-            for (int j = 1; j <= n; j++) {  
+        for (int i = 1; i <= n; i++) {  
+            for (int j = 1; j <= n; j++) {
                 if (i == 1 || i == n || j == 1 || j == n) {
                     System.out.print(c);
                 } else {
@@ -31,9 +32,10 @@ public class PatternPrinting {
             System.out.println();
         }
 
+
         System.out.println("\nX Shape:");
-        for (int i = 0; i < n; i++) {         
-            for (int j = 0; j < n; j++) {      
+        for (int i = 0; i < n; i++) {       
+            for (int j = 0; j < n; j++) {    
                 if (i == j || i + j == n - 1) {
                     System.out.print(c);
                 } else {
@@ -46,3 +48,4 @@ public class PatternPrinting {
         input.close();
     }
 }
+
